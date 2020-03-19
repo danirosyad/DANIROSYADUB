@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEBSITE DANI</title>
+    <style>
+            .mode{
+                width: 200px;
+                height: 100px;
+                background-color: black;
+                position: fixed;
+                right: 0px;
+                
+            }
+            .container{
+                width: 800px;
+                height: auto;
+                margin: auto;
+                position: relative;
+                border: 2px solid black;
+                background-color: #1E90FF;
+            }
+            .header{
+                width: auto;
+                height: 100px;
+                margin: 0px;
+                padding: 10px;
+                color: white;
+                text-align: center;
+                background-color: rgb(104, 104, 104);
+            }
+            .header h1{
+                text-shadow: 2px 2px rgb(128, 0, 0);
+                
+            }
+            .header .cover{
+                background-color: beige;
+                height: 100px;
+                width: 300px;
+                position: absolute;
+                top: 0%;
+                left: 32%;
+                opacity: 0.4;
+
+            }
+            
+            .ribbon{
+                position: absolute;
+                left: 86.3%;
+                top: -1.7%;
+            }
+
+            .menu{
+                width: auto;
+                height: 30px;
+                margin: 0px;
+                padding: 10px;
+            }
+            .menu a{
+                color: #FFF8DC;
+                text-decoration: none;
+            }
+            .menu a:hover{
+                color: rgb(163, 0, 0);
+                text-decoration: none;
+            }
+            .banner{
+                width: auto;
+                height: 174px;
+                margin: 0px;
+            }
+            .banner img{
+                width: 100%;
+                height: 100%;
+            }
+
+            .content{
+                width: auto;
+                height: auto;
+                padding: 10px;
+                background-color: white;
+                color: black;
+            }
+
+            .content .berita{
+                width: auto;
+                height: 300px;
+                overflow: scroll;
+            }
+            .content .berita img{
+                float: left;
+                width: 250px;
+                padding: 20px;
+                height: 250px;
+            }
+            
+            .main_gallery{
+                width: 800px;
+                height: 110px;
+            }
+            .main_gallery .gallery{
+                background-color: darkslategray;
+                margin: 5px;
+                width: 190px;
+                height: 100px;
+                float: left;
+            }
+
+            .button_footer{
+                background-color: yellow;
+                width:20px;
+                height: 20px;
+                float: left;
+
+            }
+            
+            .buttonahay1{
+                background-color: blue;
+                width:20px;
+                height: 20px;
+                float: left;
+                position: absolute;
+
+            }
+            
+            .buttonahay2{
+                background-color: yellow;
+                width:20px;
+                height: 20px;
+                float: left;
+                position: absolute;
+
+            }
+            
+    </style>
+</head>
+<body>
+    <div class="mode">
+        <br>
+        <center>
+            <button type="button" onclick="darkmode()">Dark Mode</button>
+            <br>
+            <br>
+            <button type="button" onclick="lightmode()">Light Mode</button>
+        </center>
+    </div>
+    <div class="container">
+
+        <div class="ribbon">
+            <img src="gambar/rsz_tr.png" alt="Twitta">
+        </div>
+
+        <div class="header">
+            <h1>WEBSITE DANI</h1>
+            <div class="cover"></div>
+        </div>
+        
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Profil</a>
+            <a href="#">Contact</a>
+        </div>
+        
+        <div class="banner">
+            <img src="gambar/banner.jpeg" alt="">
+        </div>
+=
+        <div class="content" id="content">
+            <div class="berita">
+            <h2>Ini Artikelku</h2>
+            <h3>Ditulis oleh Dani Rosyad Saksono</h3>
+                <img src="gambar/1.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam excepturi quis aspernatur sit illum explicabo architecto, quos quibusdam possimus magni doloremque pariatur similique unde, ullam debitis aperiam blanditiis eveniet ab!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam excepturi quis aspernatur sit illum explicabo architecto, quos quibusdam possimus magni doloremque pariatur similique unde, ullam debitis aperiam blanditiis eveniet ab!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam excepturi quis aspernatur sit illum explicabo architecto, quos quibusdam possimus magni doloremque pariatur similique unde, ullam debitis aperiam blanditiis eveniet ab!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam excepturi quis aspernatur sit illum explicabo architecto, quos quibusdam possimus magni doloremque pariatur similique unde, ullam debitis aperiam blanditiis eveniet ab!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam excepturi quis aspernatur sit illum explicabo architecto, quos quibusdam possimus magni doloremque pariatur similique unde, ullam debitis aperiam blanditiis eveniet ab!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam excepturi quis aspernatur sit illum explicabo architecto, quos quibusdam possimus magni doloremque pariatur similique unde, ullam debitis aperiam blanditiis eveniet ab!</p>    
+            </div>
+        </div>
+        <div class="main_gallery">
+            <div class="gallery"> 1 </div>
+            <div class="gallery"> 2 </div>
+            <div class="gallery"> 3 </div>
+            <div class="gallery"> 4 </div>
+            <div class="gallery"> 5 </div>
+            <div class="gallery"> 6 </div>
+            <div class="gallery"> 7 </div>
+            <div class="gallery"> 8 </div>
+        </div>
+
+        <div class="footer">
+            <h4>Copyright danirosyad</h4>
+        </div> 
+    </div>
+    <div class="button_footer" id="button_footer" onclick="buttonahay2()" ondblclick="buttonahay()" >
+    </div>
+    <div class="button_footer" id="button_footer2" onmouseup="buttonahay2()" onmousedown="buttonahay1()" >
+    </div>
+</body>
+<script>
+    function darkmode(){
+        document.getElementById('content').style.backgroundColor="black";
+        document.getElementById('content').style.color="white";
+    }
+    function lightmode(){
+        document.getElementById('content').style.backgroundColor="white";
+        document.getElementById('content').style.color="black";
+    }
+    function buttonahay(){
+        document.getElementById('button_footer').className="buttonahay1";
+    }
+    function buttonahay2(){
+        document.getElementById('button_footer').className="buttonahay2";
+    }
+</script>
+</html>
