@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KALKULATOR</title>
+	<style type="text/css">
+		.kotakawal {
+
+			width: 500px;
+                height: 500px;
+                background: orange;
+                padding: auto;
+                position: absolute;
+                margin: 15px auto;
+                left: 450px;
+                border-radius: 10px;
+                box-sizing: border-box;
+            }
+            .judulatas{
+                font-size: 40px;
+                margin-left: 60px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .kotak1 {
+				width: 400px;
+                height: 40px;
+                background: red;
+                padding: auto;
+                position: absolute;
+                left: 55px;
+                border-radius: 20px;
+                box-sizing: border-box;
+            }
+            .inputan {
+            	width: 200px;
+            	height: 25px;
+            	padding: auto;
+            	position: absolute;
+            	left: 90px;
+            	top: 5px;
+            }
+
+            .kotak2 {
+			width: 500px;
+                height: 50px;
+                background: red;
+                padding: auto;
+                position: absolute;
+                box-sizing: border-box;
+            }
+            .tambah {
+            	width: 100px;
+            	height: 30px;
+            	padding: auto;
+            	position: absolute;
+            	left: 35px;
+            	top: 10px;
+
+            }
+            .kali {
+            	width: 100px;
+            	height: 30px;
+            	padding: auto;
+            	position: absolute;
+            	left: 235px;
+            	top: 10px;
+            	margin-left: 20px;
+
+            }
+            .kurang {
+            	width: 100px;
+            	height: 30px;
+            	padding: auto;
+            	position: absolute;
+            	left: 135px;
+            	top: 10px;
+            	margin-left: 10px;
+
+            }
+            .bagi {
+            	width: 100px;
+            	height: 30px;
+            	padding: auto;
+            	position: absolute;
+            	left: 335px;
+            	top: 10px;
+            	margin-left: 30px;
+            }
+            .hasil {
+            	width: 100px;
+            	height: 30px;
+            	position: absolute;
+            	bottom: 50px;
+               	left: 230px;
+            	font-family: Arial, Helvetica, sans-serif;
+            	font-style: bold;
+            }
+
+	</style>
+
+	<script type="text/javascript">
+		function operasitambah(){
+			var bilangan1=document.getElementById("bil1").value;
+			var bilangan2=document.getElementById("bil2").value;
+			var angka1=Number(bilangan1);
+			var angka2=Number(bilangan2);
+
+			var hasil=angka1+angka2;
+
+			document.getElementById("hasiltext").innerHTML=hasil;
+
+		}
+		function operasikurang(){
+			var bilangan1=document.getElementById("bil1").value;
+			var bilangan2=document.getElementById("bil2").value;
+			var angka1=Number(bilangan1);
+			var angka2=Number(bilangan2);
+
+			var hasil=angka1-angka2;
+
+			document.getElementById("hasiltext").innerHTML=hasil;
+
+		}
+		function operasikali(){
+			var bilangan1=document.getElementById("bil1").value;
+			var bilangan2=document.getElementById("bil2").value;
+			var angka1=Number(bilangan1);
+			var angka2=Number(bilangan2);
+
+			var hasil=angka1*angka2;
+
+			document.getElementById("hasiltext").innerHTML=hasil;
+
+		}
+		function operasibagi(){
+			var bilangan1=document.getElementById("bil1").value;
+			var bilangan2=document.getElementById("bil2").value;
+			var angka1=Number(bilangan1);
+			var angka2=Number(bilangan2);
+
+			var hasil=angka1/angka2;
+
+			document.getElementById("hasiltext").innerHTML=hasil;
+
+		}
+	</script>
+</head>
+<body>
+	<div class="kotakawal">
+		<div>
+			<h1 class="judulatas">Kalkulator Javascript</h1>
+		</div><br><br>
+		<div class="kotak1">
+			<input id="bil1" class="inputan" type="text">
+		</div>
+		<br><br><br><br><br><br>
+		<div class="kotak1">
+			<input id="bil2" class="inputan" type="text">
+		</div>
+		<br><br><br><br><br><br>
+		<div class="kotak2">
+			<button class="tambah" onclick="operasitambah()" value="tambah">Tambah</button>
+			<button class="kurang" onclick="operasikurang()" value="kurang">Kurang</button>
+			<button class="kali" onclick="operasikali()" value="kali">Kali</button>
+			<button class="bagi" onclick="operasibagi()" value="bagi">Bagi</button>
+		</div>
+		<div class="hasil">
+			<h1 id="hasiltext"></h1>
+		</div>
+	</div>
+
+</body>
+</html>
